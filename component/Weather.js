@@ -41,9 +41,11 @@ export default function Weather(props) {
    const style = StyleSheet.create({
     backdrop: {
         flexDirection: 'column',
-    alignItems: 'center',
-    width: '100%',
-    height: '100%'
+        width: '100%',
+        height: '100%',
+        justifyContent: 'center',
+        alignItems: 'center'
+
     },
         zipwea: {
             fontSize: 30,
