@@ -31,8 +31,8 @@ export default function Weather(props) {
 
     return (
         <ImageBackground source={require('../bgg.jpg')} style={style.backdrop}> 
-            <Text style={style.weaTxt} >Zipcode</Text>
-           <Text style={style.weaTxt} >{props.zipCode}</Text>
+            <Text style={style.main} >Zipcode</Text>
+           <Text style={style.main} >{props.zipCode}</Text>
            <Forecast {...forecastInfo}/>
         </ImageBackground>
     
@@ -51,5 +51,12 @@ export default function Weather(props) {
             fontSize: 30,
             margin: 10,
         },
+        main:{
+            textAlign : 'center',
+          textAlignVertical: 'center',
+          color: "purple",
+          fontSize: 15,
+          fontWeight: "bold"
+        }
 
    });
