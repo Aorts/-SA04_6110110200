@@ -31,11 +31,9 @@ export default function Weather(props) {
 
     return (
         <ImageBackground source={require('../bgg.jpg')} style={style.backdrop}> 
-           <View style={style.zipItem}>
-           <Text>Zipcode</Text>
-           <Text>{props.zipCode}</Text>
+            <Text style={style.weaTxt} >Zipcode</Text>
+           <Text style={style.weaTxt} >{props.zipCode}</Text>
            <Forecast {...forecastInfo}/>
-           </View>
         </ImageBackground>
     
     )
@@ -47,16 +45,9 @@ export default function Weather(props) {
     width: '100%',
     height: '100%'
     },
-        zipItem: {
-            flex: 1,
-            flexDirection: 'row',
-            justifyContent:'space-between'
+        zipwea: {
+            fontSize: 30,
+            margin: 10,
         },
-    
-        zipPlace: {
-            flex: 1,
-        },
-        zipCode: {
-            flex: 1,
-        }
+
    });
